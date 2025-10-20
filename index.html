@@ -1,159 +1,141 @@
-<!DOCTYPE html>
-<html lang="en"><head>
+<!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Veloura$ — Gem Collection</title>
-<link rel="stylesheet" href="styles.css">
-</head><body>
+<link rel="stylesheet" href="styles.css"></head><body>
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">Veloura<span>$</span></a>
     <nav class="nav">
-      <a href="index.html#collection" style="border-color:var(--gold)">Collection</a>
+      <a href="index.html#collection">Collection</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="cart.html">Cart <span id="cartBadge">0</span></a>
     </nav>
-    <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
-  </div>
-  <div id="mobileNav" class="mobile-nav">
-    <a href="index.html#collection">Collection</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="cart.html">Cart <span id="cartBadgeMobile">0</span></a>
   </div>
 </header>
-<main>
-  <section class="container section">
-    <div class="section-head">
-      <h1>Gemstone Collection</h1>
-      <p class="muted">Original renders, real specs. Click any stone to view details and gallery.</p>
-    </div>
-    <div class="grid">
-      
+<main class="container section">
+  <div class="section-head"><h1>Gemstone Collection</h1><p class="muted">Original renders, real specs. Click any stone to view details and gallery.</p></div>
+  <div id="collection" class="grid">
 <article class="card">
-  <a href="ceylon-blue-sapphire.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="ceylon-blue-sapphire.html">
+    <div class="card-media"><img src="/veloura/assets/ceylon-blue-sapphire/set1.png" alt="Ceylon Blue Sapphire — Cushion Cut"></div>
+  </a>
   <h3><a href="ceylon-blue-sapphire.html">Ceylon Blue Sapphire — Cushion Cut</a></h3>
   <p class="muted">Blue Sapphire · Cushion · 2.45 ct</p>
-  <div class="price-row"><span class="price">$4850</span>
-    <button class="btn ghost" data-add='{"slug":"ceylon-blue-sapphire","name":"Ceylon Blue Sapphire — Cushion Cut","price":4850}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$4850</strong>
+    <button class="btn" onclick='addItem({"slug":"ceylon-blue-sapphire","name":"Ceylon Blue Sapphire — Cushion Cut","price":4850})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="padparadscha-sapphire.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="padparadscha-sapphire.html">
+    <div class="card-media"><img src="/veloura/assets/padparadscha-sapphire/set1.png" alt="Padparadscha Sapphire — Oval"></div>
+  </a>
   <h3><a href="padparadscha-sapphire.html">Padparadscha Sapphire — Oval</a></h3>
   <p class="muted">Padparadscha Sapphire · Oval · 1.62 ct</p>
-  <div class="price-row"><span class="price">$9200</span>
-    <button class="btn ghost" data-add='{"slug":"padparadscha-sapphire","name":"Padparadscha Sapphire — Oval","price":9200}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$9200</strong>
+    <button class="btn" onclick='addItem({"slug":"padparadscha-sapphire","name":"Padparadscha Sapphire — Oval","price":9200})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="ruby.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="ruby.html">
+    <div class="card-media"><img src="/veloura/assets/ruby/set1.png" alt="Ruby — Pigeon Blood Tone"></div>
+  </a>
   <h3><a href="ruby.html">Ruby — Pigeon Blood Tone</a></h3>
   <p class="muted">Ruby · Mixed oval · 1.18 ct</p>
-  <div class="price-row"><span class="price">$3650</span>
-    <button class="btn ghost" data-add='{"slug":"ruby","name":"Ruby — Pigeon Blood Tone","price":3650}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$3650</strong>
+    <button class="btn" onclick='addItem({"slug":"ruby","name":"Ruby — Pigeon Blood Tone","price":3650})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="alexandrite.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="alexandrite.html">
+    <div class="card-media"><img src="/veloura/assets/alexandrite/set1.png" alt="Alexandrite — Color-Change"></div>
+  </a>
   <h3><a href="alexandrite.html">Alexandrite — Color-Change</a></h3>
   <p class="muted">Alexandrite · Pear · 0.88 ct</p>
-  <div class="price-row"><span class="price">$5400</span>
-    <button class="btn ghost" data-add='{"slug":"alexandrite","name":"Alexandrite — Color-Change","price":5400}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$5400</strong>
+    <button class="btn" onclick='addItem({"slug":"alexandrite","name":"Alexandrite — Color-Change","price":5400})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="spinel.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="spinel.html">
+    <div class="card-media"><img src="/veloura/assets/spinel/set1.png" alt="Spinel — Neon Pink"></div>
+  </a>
   <h3><a href="spinel.html">Spinel — Neon Pink</a></h3>
   <p class="muted">Spinel · Cushion · 1.05 ct</p>
-  <div class="price-row"><span class="price">$2150</span>
-    <button class="btn ghost" data-add='{"slug":"spinel","name":"Spinel — Neon Pink","price":2150}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$2150</strong>
+    <button class="btn" onclick='addItem({"slug":"spinel","name":"Spinel — Neon Pink","price":2150})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="cats-eye-chrysoberyl.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="cats-eye-chrysoberyl.html">
+    <div class="card-media"><img src="/veloura/assets/cats-eye-chrysoberyl/set1.png" alt="Cat’s Eye Chrysoberyl — Chatoyancy Line"></div>
+  </a>
   <h3><a href="cats-eye-chrysoberyl.html">Cat’s Eye Chrysoberyl — Chatoyancy Line</a></h3>
   <p class="muted">Chrysoberyl (Cat’s Eye) · Cabochon oval · 3.12 ct</p>
-  <div class="price-row"><span class="price">$3990</span>
-    <button class="btn ghost" data-add='{"slug":"cats-eye-chrysoberyl","name":"Cat’s Eye Chrysoberyl — Chatoyancy Line","price":3990}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$3990</strong>
+    <button class="btn" onclick='addItem({"slug":"cats-eye-chrysoberyl","name":"Cat’s Eye Chrysoberyl — Chatoyancy Line","price":3990})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="garnet.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="garnet.html">
+    <div class="card-media"><img src="/veloura/assets/garnet/set1.png" alt="Garnet — Royal Purple Rhodolite"></div>
+  </a>
   <h3><a href="garnet.html">Garnet — Royal Purple Rhodolite</a></h3>
   <p class="muted">Garnet (Rhodolite) · Round brilliant · 2.02 ct</p>
-  <div class="price-row"><span class="price">$780</span>
-    <button class="btn ghost" data-add='{"slug":"garnet","name":"Garnet — Royal Purple Rhodolite","price":780}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$780</strong>
+    <button class="btn" onclick='addItem({"slug":"garnet","name":"Garnet — Royal Purple Rhodolite","price":780})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="yellow-sapphire.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="yellow-sapphire.html">
+    <div class="card-media"><img src="/veloura/assets/yellow-sapphire/set1.png" alt="Yellow Sapphire — Golden Sunrise"></div>
+  </a>
   <h3><a href="yellow-sapphire.html">Yellow Sapphire — Golden Sunrise</a></h3>
   <p class="muted">Yellow Sapphire · Emerald · 1.74 ct</p>
-  <div class="price-row"><span class="price">$1650</span>
-    <button class="btn ghost" data-add='{"slug":"yellow-sapphire","name":"Yellow Sapphire — Golden Sunrise","price":1650}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$1650</strong>
+    <button class="btn" onclick='addItem({"slug":"yellow-sapphire","name":"Yellow Sapphire — Golden Sunrise","price":1650})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="blue-sapphire-pair.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="blue-sapphire-pair.html">
+    <div class="card-media"><img src="/veloura/assets/blue-sapphire-pair/set1.png" alt="Blue Sapphire Pair — Round Calibrated"></div>
+  </a>
   <h3><a href="blue-sapphire-pair.html">Blue Sapphire Pair — Round Calibrated</a></h3>
   <p class="muted">Blue Sapphire · Round · 0.62 ct</p>
-  <div class="price-row"><span class="price">$690</span>
-    <button class="btn ghost" data-add='{"slug":"blue-sapphire-pair","name":"Blue Sapphire Pair — Round Calibrated","price":690}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$690</strong>
+    <button class="btn" onclick='addItem({"slug":"blue-sapphire-pair","name":"Blue Sapphire Pair — Round Calibrated","price":690})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="star-sapphire.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="star-sapphire.html">
+    <div class="card-media"><img src="/veloura/assets/star-sapphire/set1.png" alt="Star Sapphire — Six-Ray"></div>
+  </a>
   <h3><a href="star-sapphire.html">Star Sapphire — Six-Ray</a></h3>
   <p class="muted">Blue Star Sapphire · Cabochon oval · 4.85 ct</p>
-  <div class="price-row"><span class="price">$1890</span>
-    <button class="btn ghost" data-add='{"slug":"star-sapphire","name":"Star Sapphire — Six-Ray","price":1890}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$1890</strong>
+    <button class="btn" onclick='addItem({"slug":"star-sapphire","name":"Star Sapphire — Six-Ray","price":1890})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="pink-sapphire.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="pink-sapphire.html">
+    <div class="card-media"><img src="/veloura/assets/pink-sapphire/set1.png" alt="Pink Sapphire — Pastel Rose"></div>
+  </a>
   <h3><a href="pink-sapphire.html">Pink Sapphire — Pastel Rose</a></h3>
   <p class="muted">Pink Sapphire · Oval brilliant · 1.32 ct</p>
-  <div class="price-row"><span class="price">$1480</span>
-    <button class="btn ghost" data-add='{"slug":"pink-sapphire","name":"Pink Sapphire — Pastel Rose","price":1480}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$1480</strong>
+    <button class="btn" onclick='addItem({"slug":"pink-sapphire","name":"Pink Sapphire — Pastel Rose","price":1480})'>Add</button>
   </div>
 </article>
-
 <article class="card">
-  <a href="green-tourmaline.html"><div class=\"card-media\"><img src=\"\1\" alt=\"Product image\"></div></a>
+  <a href="green-tourmaline.html">
+    <div class="card-media"><img src="/veloura/assets/green-tourmaline/set1.png" alt="Green Tourmaline — Emerald Step"></div>
+  </a>
   <h3><a href="green-tourmaline.html">Green Tourmaline — Emerald Step</a></h3>
   <p class="muted">Tourmaline · Emerald · 2.28 ct</p>
-  <div class="price-row"><span class="price">$620</span>
-    <button class="btn ghost" data-add='{"slug":"green-tourmaline","name":"Green Tourmaline — Emerald Step","price":620}'>Add</button>
+  <div style="display:flex;justify-content:space-between;align-items:center"><strong>$620</strong>
+    <button class="btn" onclick='addItem({"slug":"green-tourmaline","name":"Green Tourmaline — Emerald Step","price":620})'>Add</button>
   </div>
-</article>
-
-    </div>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="brand">
-      <strong>Veloura<span>$</span></strong>
-      <p class="muted">© <span id="year"></span> Veloura. All rights reserved.</p>
-    </div>
-    <div class="foot-links">
-      <a href="#">Shipping</a>
-      <a href="#">Returns</a>
-      <a href="#">Care</a>
-      <a href="#">Privacy</a>
-    </div>
-  </div>
-</footer>
-<script src="script.js"></script>
-</body></html>
+</article></div>
+</main><footer class="site-footer"><div class="container" style="padding:22px 0;border-top:1px solid var(--line)">
+  <strong>Veloura<span>$</span></strong> <span class="muted">© <span id="year"></span></span>
+</div><script>document.getElementById('year').textContent=new Date().getFullYear()</script><script src="script.js"></script></footer></body></html>

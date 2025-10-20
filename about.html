@@ -1,60 +1,15 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About — Veloura$</title>
-<link rel="stylesheet" href="styles.css">
-</head><body>
-<header class="site-header">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About — Veloura$</title><link rel="stylesheet" href="styles.css"></head><body><header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">Veloura<span>$</span></a>
     <nav class="nav">
       <a href="index.html#collection">Collection</a>
-      <a href="about.html" style="border-color:var(--gold)">About</a>
+      <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="cart.html">Cart <span id="cartBadge">0</span></a>
     </nav>
-    <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
-  </div>
-  <div id="mobileNav" class="mobile-nav">
-    <a href="index.html#collection">Collection</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="cart.html">Cart <span id="cartBadgeMobile">0</span></a>
   </div>
 </header>
-<main class="container section alt">
-  <div class="split">
-    <div>
-      <h1>Crafted with intention</h1>
-      <p>Every piece is sketched in Los Angeles and produced in small batches with recycled metals and conflict-free stones. Packaging is plastic-free and recyclable.</p>
-      <ul>
-        <li>Ethically sourced materials</li>
-        <li>Free resizing & 30-day returns</li>
-        <li>One-year warranty</li>
-      </ul>
-    </div>
-    <div aria-hidden="true">
-      <svg viewBox="0 0 300 220" class="about-svg">
-        <rect width="300" height="220" rx="16" fill="#f2eee6"/>
-        <path d="M30 160 Q150 60 270 160" stroke="#bfa26a" stroke-width="5" fill="none"/>
-        <circle cx="200" cy="110" r="38" fill="none" stroke="#907a44" stroke-width="4"/>
-      </svg>
-    </div>
-  </div>
-</main>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="brand">
-      <strong>Veloura<span>$</span></strong>
-      <p class="muted">© <span id="year"></span> Veloura. All rights reserved.</p>
-    </div>
-    <div class="foot-links">
-      <a href="#">Shipping</a>
-      <a href="#">Returns</a>
-      <a href="#">Care</a>
-      <a href="#">Privacy</a>
-    </div>
-  </div>
-</footer>
-<script src="script.js"></script>
-</body></html>
+<main class="container section"><h1>About</h1><p>Veloura$ crafts minimal, ethically sourced jewelry and gemstones.</p></main><footer class="site-footer"><div class="container" style="padding:22px 0;border-top:1px solid var(--line)">
+  <strong>Veloura<span>$</span></strong> <span class="muted">© <span id="year"></span></span>
+</div><script>document.getElementById('year').textContent=new Date().getFullYear()</script><script src="script.js"></script></footer></body></html>

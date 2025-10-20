@@ -1,49 +1,15 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cart — Veloura$</title>
-<link rel="stylesheet" href="styles.css">
-</head><body>
-<header class="site-header">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cart — Veloura$</title><link rel="stylesheet" href="styles.css"></head><body><header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">Veloura<span>$</span></a>
     <nav class="nav">
-      <a href="index.html#collection" style="border-color:var(--gold)">Collection</a>
+      <a href="index.html#collection">Collection</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="cart.html">Cart <span id="cartBadge">0</span></a>
     </nav>
-    <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
-  </div>
-  <div id="mobileNav" class="mobile-nav">
-    <a href="index.html#collection">Collection</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="cart.html">Cart <span id="cartBadgeMobile">0</span></a>
   </div>
 </header>
-<main class="container section">
-  <h1>Your Cart</h1>
-  <div id="cartContainer" class="muted">Loading…</div>
-  <div style="margin-top:16px">
-    <a class="btn" href="index.html#collection">Continue shopping</a>
-    <button id="checkoutBtn" class="btn primary">Checkout (demo)</button>
-  </div>
-  <p class="muted" style="margin-top:10px">This is a static demo cart powered by your browser's storage. Integrate with Shopify/Stripe later.</p>
-</main>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="brand">
-      <strong>Veloura<span>$</span></strong>
-      <p class="muted">© <span id="year"></span> Veloura. All rights reserved.</p>
-    </div>
-    <div class="foot-links">
-      <a href="#">Shipping</a>
-      <a href="#">Returns</a>
-      <a href="#">Care</a>
-      <a href="#">Privacy</a>
-    </div>
-  </div>
-</footer>
-<script src="script.js"></script>
-</body></html>
+<main class="container section"><h1>Your Cart</h1><div id="cartContainer" class="muted">Cart coming soon (demo).</div></main><footer class="site-footer"><div class="container" style="padding:22px 0;border-top:1px solid var(--line)">
+  <strong>Veloura<span>$</span></strong> <span class="muted">© <span id="year"></span></span>
+</div><script>document.getElementById('year').textContent=new Date().getFullYear()</script><script src="script.js"></script></footer></body></html>
