@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cat’s Eye Chrysoberyl — Chatoyancy Line — Veloura$</title>
+<link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Veloura<span>$</span></a>
+    <nav class="nav">
+      <a href="index.html#collection" style="border-color:var(--gold)">Collection</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart <span id="cartBadge">0</span></a>
+    </nav>
+    <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+  </div>
+  <div id="mobileNav" class="mobile-nav">
+    <a href="index.html#collection">Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart <span id="cartBadgeMobile">0</span></a>
+  </div>
+</header>
+<main class="container section">
+  <nav class="muted" style="margin-bottom:12px"><a href="index.html">Home</a> / Cat’s Eye Chrysoberyl — Chatoyancy Line</nav>
+  <div class="product">
+    <div>
+      <img id="mainImg" src="assets/cats-eye-chrysoberyl/set1.png" alt="Cat’s Eye Chrysoberyl — Chatoyancy Line" style="width:100%;border:1px solid var(--line);border-radius:16px">
+      <div style="display:flex;gap:10px;margin-top:10px">
+        <img class="thumb" src="assets/cats-eye-chrysoberyl/set1.png" alt="set1" style="width:100px;height:100px;object-fit:cover;border:1px solid var(--line);border-radius:10px;cursor:pointer">
+        <img class="thumb" src="assets/cats-eye-chrysoberyl/set2.png" alt="set2" style="width:100px;height:100px;object-fit:cover;border:1px solid var(--line);border-radius:10px;cursor:pointer">
+        <img class="thumb" src="assets/cats-eye-chrysoberyl/set3.png" alt="set3" style="width:100px;height:100px;object-fit:cover;border:1px solid var(--line);border-radius:10px;cursor:pointer">
+      </div>
+    </div>
+    <div>
+      <h1 style="margin:0 0 6px">Cat’s Eye Chrysoberyl — Chatoyancy Line</h1>
+      <div class="price" style="font-size:22px;margin-bottom:10px">$3990</div>
+      <p class="muted" style="max-width:52ch">Well-centered, continuous eye with crisp separation; silky body tone shows a strong milk-and-honey effect.</p>
+      <ul>
+        <li>Chrysoberyl (Cat’s Eye) · Cabochon oval · 3.12 ct</li>
+        <li>Origin: Sri Lanka</li>
+        <li>Treatment: None</li>
+        <li>SKU: VLU-CCE-HON-312CB</li>
+      </ul>
+      <div style="display:flex;gap:10px;margin:16px 0">
+        <button class="btn primary" data-add='{"slug":"cats-eye-chrysoberyl","name":"Cat’s Eye Chrysoberyl — Chatoyancy Line","price":3990}'>Add to cart</button>
+        <a class="btn" href="cart.html">View cart</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="brand">
+      <strong>Veloura<span>$</span></strong>
+      <p class="muted">© <span id="year"></span> Veloura. All rights reserved.</p>
+    </div>
+    <div class="foot-links">
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">Care</a>
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>
+document.querySelectorAll('.thumb').forEach(t => t.addEventListener('click', () => {
+  document.getElementById('mainImg').src = t.src;
+}));
+</script>
+</body></html>
